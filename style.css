@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "Urbanist", sans-serif;
 }
+/* html{
+    font-size: 62.5%;
+} */
 
 body {
     width: 100vw;
@@ -20,18 +23,18 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: .5rem;
+    margin-top: 1rem;
 }
 
 h1 {
-    font-size: 3rem;
-    background-color: #30d9ac3c;
+    width: 90%;
+    background-color: #30d9ac60;
     border-radius: 10px;
-    width: 20%;
-    color: #ffffffa4;
+    color: #ffffffcb;
     font-family: "Cedarville Cursive", cursive;
-    font-weight: 900;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,16 +47,13 @@ h1 {
     -moz-transition: all 0.25s;
     -ms-transition: all 0.25s;
     -o-transition: all 0.25s;
+    font-size: 3rem;
 }
-
-h1:hover {
-    color: #3333339a;
-}
-
 form {
-    width: 80%;
+    width: 95%;
     display: flex;
-    padding: 0 1rem;
+    justify-content: center;
+    padding: .3rem 1rem;
     align-items: center;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -64,8 +64,8 @@ form {
 
 input {
     width: 85%;
-    font-size: 1.4rem;
-    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border: 1px solid #333;
@@ -73,13 +73,13 @@ input {
 }
 
 button {
-    width: 15%;
-    font-size: 1.4rem;
-    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border: 1px solid #333;
     background-color: skyblue;
+    white-space: nowrap;
 }
 
 button:hover {
@@ -107,19 +107,19 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1rem;
 
 }
 
-.todoTasks {
-    width: 50%;
+.todoTasks{
+    width: 80%;
     background-color: #ffffff58;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
-    font-size: 1.2rem;
-    padding: .5rem 1.4rem;
+    gap: 3rem;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -145,17 +145,12 @@ i{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: rgb(239, 47, 47);
 }
 i:hover{
     color: rgb(169, 15, 15);
 }
-
-
-
-
-
 
 .todoTasks:hover {
     background-color: #ffffffa0;
