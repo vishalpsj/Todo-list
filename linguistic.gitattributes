@@ -1,2 +1,4 @@
 *.html linguist-detectable=true
 *.css linguist-detectable=false
+*.css linguist-vendored
+*.html linguist-language=HTML
